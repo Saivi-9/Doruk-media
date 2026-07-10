@@ -28,13 +28,14 @@
             "openingHours": "Mo-Fr 09:00-18:00"
         }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <style>
         /* RTL Fixes */
+        html, body { overflow-x: hidden; }
         .lang-dropdown { right: auto; left: 0; }
         .header-actions { flex-direction: row-reverse; }
         .hero-buttons { justify-content: flex-start; }
@@ -43,6 +44,25 @@
         .step-arrow { right: auto; left: -30px; }
         .arrow-down { margin-left: 0; margin-right: 4px; }
         .contact-form { direction: rtl; }
+        .hero-content { text-align: right; }
+        .section-header { text-align: center; }
+        .about-right ul li { padding-left: 0; padding-right: 20px; text-align: right; }
+        .about-right ul li::before { left: auto; right: 0; }
+        .service-card { text-align: right; }
+        .portfolio-info { text-align: right; }
+        .team-card { text-align: center; }
+        .testimonial-card { text-align: center; }
+        .faq-question { text-align: right; }
+        .faq-answer { text-align: right; }
+        .footer-grid { text-align: right; }
+        .newsletter { text-align: center; }
+    
+        /* Mobile RTL fixes */
+        @media (max-width: 768px) {
+        .hero-content { text-align: center; }
+        .about-right ul li { text-align: center; padding-right: 0; }
+        .about-right ul li::before { position: static; display: inline; margin-left: 6px; }
+        }
     </style>
 </head>
 <body>
