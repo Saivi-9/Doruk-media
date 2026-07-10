@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /tr/
+Allow: /en/
+Allow: /ru/
+Allow: /ar/
+Disallow: /css/
+Disallow: /js/
+
+Sitemap: https://doruk-media-3780f1.netlify.app/sitemap.xml
