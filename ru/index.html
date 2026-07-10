@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Агентство соцмедиа на Кипре | Doruk Media - Достигните цифровой вершины</title>
+    <meta name="description" content="Ведущее агентство соцмедиа на Кипре Doruk Media: управление соцмедиа, реклама, создание контента и инфлюенсер-маркетинг. Получите бесплатный анализ.">
+    <meta name="keywords" content="агентство соцмедиа Кипр, управление соцмедиа Кипр, реклама в соцмедиа Кипр, соцмедиа агентство Кипр, цифровой маркетинг Кипр">
+    <link rel="canonical" href="https://www.dorukmedia.com/ru/">
+    <link rel="alternate" hreflang="tr" href="https://www.dorukmedia.com/tr/">
+    <link rel="alternate" hreflang="en" href="https://www.dorukmedia.com/en/">
+    <link rel="alternate" hreflang="ru" href="https://www.dorukmedia.com/ru/">
+    <link rel="alternate" hreflang="ar" href="https://www.dorukmedia.com/ar/">
+    <link rel="alternate" hreflang="x-default" href="https://www.dorukmedia.com/tr/">
+    <meta property="og:title" content="Агентство соцмедиа на Кипре | Doruk Media">
+    <meta property="og:description" content="Ведущее агентство соцмедиа на Кипре.">
+    <meta property="og:url" content="https://www.dorukmedia.com/ru/">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Doruk Media",
+            "description": "Агентство по управлению соцмедиа и рекламе на Кипре",
+            "url": "https://www.dorukmedia.com/ru/",
+            "telephone": "+90 392 666 55 44",
+            "address": { "@type": "PostalAddress", "streetAddress": "Girne Caddesi No:12", "addressLocality": "Гирне", "addressRegion": "Кипр", "postalCode": "99300", "addressCountry": "CY" },
+            "openingHours": "Mo-Fr 09:00-18:00"
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <div class="logo-circle c1"></div>
+                    <div class="logo-circle c2"></div>
+                    <div class="logo-triangle"></div>
+                </div>
+                <span class="logo-text">Doruk<span class="logo-accent">Media</span></span>
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#pricing">Цены</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="lang-switcher">
+                    <div class="lang-current" id="langCurrent">
+                        <span class="globe">🌐</span>
+                        <span class="lang-name" id="langName">Русский</span>
+                        <i class="arrow-down"></i>
+                    </div>
+                    <ul class="lang-dropdown" id="langDropdown">
+                        <li data-lang="tr">🇹🇷 Türkçe</li>
+                        <li data-lang="en">🇬🇧 English</li>
+                        <li data-lang="ru" class="active">🇷🇺 Русский</li>
+                        <li data-lang="ar">🇸🇦 العربية</li>
+                    </ul>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="icon-sun">☀️</span>
+                    <span class="icon-moon">🌙</span>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <canvas id="particleCanvas"></canvas>
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <span class="badge">🌟 Агентство №1 на Кипре</span>
+                <h1>
+                    <span class="static-text">Самое креативное на Кипре</span><br>
+                    <span class="dynamic-text" id="typewriter"></span><span class="typewriter-cursor"></span>
+                </h1>
+                <p class="hero-description">Мы предлагаем комплексные решения в <strong>управлении соцмедиа</strong>, <strong>рекламе в соцмедиа</strong> и создании контента, чтобы вывести ваш бренд на цифровую вершину.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Бесплатный анализ</a>
+                    <a href="#portfolio" class="btn btn-outline">Наши работы</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="500">0</span><span>+</span>
+                        <span class="stat-label">Успешных проектов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="98">0</span><span>%</span>
+                        <span class="stat-label">Довольных клиентов</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="24">0</span><span>/7</span>
+                        <span class="stat-label">Поддержка</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual reveal">
+                <div class="dashboard-mockup">
+                    <div class="browser-bar">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        <span class="url">app.dorukmedia.com/analytics</span>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="live-badge">● LIVE</div>
+                        <div class="metric-card">
+                            <span class="metric-label">Подписчики</span>
+                            <span class="metric-value">128.4K</span>
+                            <div class="metric-bar"><div class="fill" style="width:80%"></div></div>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-label">Вовлечённость</span>
+                            <span class="metric-value">5.62%</span>
+                            <div class="metric-bar"><div class="fill" style="width:65%"></div></div>
+                        </div>
+                        <div class="chart-area">
+                            <svg viewBox="0 0 200 60">
+                                <polyline class="chart-line" points="0,40 40,30 80,45 120,20 160,25 200,10"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span>Прокрутите вниз</span>
+        </div>
+    </section>
+
+    <!-- TRUSTED -->
+    <section class="trusted">
+        <div class="container">
+            <div class="marquee">
+                <div class="marquee-track">
+                    <span>GOOGLE</span><span>META</span><span>SHOPIFY</span><span>AMAZON</span>
+                    <span>SPOTIFY</span><span>LINKEDIN</span><span>TURKCELL</span><span>KKTC TELSIM</span>
+                    <span>GOOGLE</span><span>META</span><span>SHOPIFY</span><span>AMAZON</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Наши услуги</h2>
+                <p>Комплексные цифровые решения от <strong>агентства соцмедиа на Кипре</strong>.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">📱</div>
+                    <h3>Управление соцмедиа</h3>
+                    <p>Профессиональное управление Instagram, Facebook, TikTok, LinkedIn, контент-план и взаимодействие с аудиторией.</p>
+                    <span class="learn-more">Подробнее →</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">🎯</div>
+                    <h3>Реклама в соцмедиа</h3>
+                    <p>Высококонверсионные кампании через Meta Ads, TikTok Ads и LinkedIn Ads, нацеленные на вашу аудиторию.</p>
+                    <span class="learn-more">Подробнее →</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">🎬</div>
+                    <h3>Создание контента</h3>
+                    <p>Профессиональное видео, фото, reels и графический дизайн для вашего бренда.</p>
+                    <span class="learn-more">Подробнее →</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">🤝</div>
+                    <h3>Инфлюенсер-маркетинг</h3>
+                    <p>Эффективные кампании с нашей сетью инфлюенсеров на Кипре.</p>
+                    <span class="learn-more">Подробнее →</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">📈</div>
+                    <h3>SEO и цифровой PR</h3>
+                    <p>Повышение видимости в поиске и укрепление онлайн-репутации.</p>
+                    <span class="learn-more">Подробнее →</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">📊</div>
+                    <h3>Аналитика и отчёты</h3>
+                    <p>Детальные отчёты о производительности и рекомендации на основе данных.</p>
+                    <span class="learn-more">Подробнее →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal-overlay" id="serviceModal">
+        <div class="modal-content">
+            <button class="modal-close">✕</button>
+            <h3 id="modalTitle">Название услуги</h3>
+            <p id="modalDescription">Описание услуги будет здесь.</p>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container about-grid">
+            <div class="about-left reveal">
+                <div class="analytics-card">
+                    <div class="live-badge">● Активно</div>
+                    <div class="metric-card">
+                        <span class="metric-label">Рост клиентов</span>
+                        <span class="metric-value">+124%</span>
+                        <div class="metric-bar"><div class="fill" style="width:85%"></div></div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item"><div class="timeline-dot"></div><span class="timeline-year">2020</span><p>Начинали как маленькая команда.</p></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><span class="timeline-year">2022</span><p>Обслужили более 100 брендов.</p></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><span class="timeline-year">2024</span><p>Реализовали международные проекты.</p></div>
+                    <div class="timeline-item"><div class="timeline-dot"></div><span class="timeline-year">Сегодня</span><p>Самое востребованное агентство Кипра.</p></div>
+                </div>
+            </div>
+            <div class="about-right reveal">
+                <h2>О нас</h2>
+                <p>Doruk Media — агентство соцмедиа на Кипре. Наша увлечённая и творческая команда помогает брендам эффективно рассказывать свои цифровые истории. Мы доказали успех в <strong>управлении соцмедиа на Кипре</strong> и <strong>рекламе в соцмедиа на Кипре</strong>.</p>
+                <ul>
+                    <li>Глубокое знание местного рынка</li>
+                    <li>Стратегии на основе данных</li>
+                    <li>Поддержка 24/7</li>
+                    <li>Измеримые результаты</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US -->
+    <section id="why-us">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Почему Doruk Media?</h2>
+                <p>Преимущества, которые выделяют вас среди конкурентов.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card reveal"><div class="why-icon">🎯</div><h3>Экспертиза рынка</h3><p>Мы знаем кипрский рынок и поведение потребителей изнутри.</p></div>
+                <div class="why-card reveal"><div class="why-icon">✨</div><h3>Креативная команда</h3><p>Молодая, динамичная команда, следящая за трендами.</p></div>
+                <div class="why-card reveal"><div class="why-icon">📊</div><h3>Доказанные результаты</h3><p>500+ проектов говорят сами за себя.</p></div>
+                <div class="why-card reveal"><div class="why-icon">📞</div><h3>Всегда на связи</h3><p>Мы рядом, когда вы нуждаетесь в нас.</p></div>
+                <div class="why-card reveal"><div class="why-icon">💡</div><h3>Конкурентные цены</h3><p>Прозрачное ценообразование для любого бюджета.</p></div>
+                <div class="why-card reveal"><div class="why-icon">🌍</div><h3>Мировые стандарты</h3><p>Приносим глобальное качество на Кипр.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Наш процесс</h2>
+                <p>4 этапа, которые мы проходим с каждым проектом.</p>
+            </div>
+            <div class="process-steps">
+                <div class="step-card reveal">
+                    <div class="step-number">1</div>
+                    <h3>Исследование</h3>
+                    <p>Анализируем аудиторию и конкурентов.</p>
+                    <span class="step-arrow">→</span>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-number">2</div>
+                    <h3>Стратегия</h3>
+                    <p>Создаём дорожную карту соцмедиа.</p>
+                    <span class="step-arrow">→</span>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-number">3</div>
+                    <h3>Реализация</h3>
+                    <p>Создаём контент и управляем рекламой.</p>
+                    <span class="step-arrow">→</span>
+                </div>
+                <div class="step-card reveal">
+                    <div class="step-number">4</div>
+                    <h3>Рост</h3>
+                    <p>Анализируем данные и оптимизируем.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid reveal">
+                <div class="stat-item"><span class="number stat-number" data-count="500">0</span><span class="number">+</span><div class="label">Успешных проектов</div></div>
+                <div class="stat-item"><span class="number stat-number" data-count="95">0</span><span class="number">%</span><div class="label">Довольных клиентов</div></div>
+                <div class="stat-item"><span class="number stat-number" data-count="120">0</span><span class="number">+</span><div class="label">Активных клиентов</div></div>
+                <div class="stat-item"><span class="number">24/7</span><div class="label">Поддержка</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Цены</h2>
+                <p>Гибкие пакеты под ваши нужды.</p>
+            </div>
+            <div class="pricing-toggle reveal">
+                <span>Ежемесячно</span>
+                <div class="toggle-switch" id="pricingToggle"></div>
+                <span>Годовой (скидка 20%)</span>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal">
+                    <h3>Старт</h3>
+                    <p>Для малого бизнеса</p>
+                    <div class="price monthly">€999<span>/мес</span></div>
+                    <div class="price yearly" style="display:none;">€799<span>/мес</span></div>
+                    <ul>
+                        <li>✓ 3 соцсети</li>
+                        <li>✓ 12 постов в месяц</li>
+                        <li>✓ Базовый отчёт</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Начать</a>
+                </div>
+                <div class="pricing-card popular reveal">
+                    <div class="popular-badge">Самый популярный</div>
+                    <h3>Профессиональный</h3>
+                    <p>Для растущих брендов</p>
+                    <div class="price monthly">€1,999<span>/мес</span></div>
+                    <div class="price yearly" style="display:none;">€1,599<span>/мес</span></div>
+                    <ul>
+                        <li>✓ 5 соцсетей</li>
+                        <li>✓ 20 постов + Reels</li>
+                        <li>✓ Управление рекламой (бюджет €400)</li>
+                        <li>✓ Подробная аналитика</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Начать</a>
+                </div>
+                <div class="pricing-card reveal">
+                    <h3>Корпоративный</h3>
+                    <p>Для крупных компаний</p>
+                    <div class="price monthly">€3,999<span>/мес</span></div>
+                    <div class="price yearly" style="display:none;">€3,199<span>/мес</span></div>
+                    <ul>
+                        <li>✓ Все платформы</li>
+                        <li>✓ Безлимитные посты</li>
+                        <li>✓ Оптимизация рекламного бюджета</li>
+                        <li>✓ Персональный менеджер</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Связаться</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Портфолио</h2>
+                <p>Несколько наших историй успеха.</p>
+            </div>
+            <div class="filter-buttons reveal">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="seo">SEO</button>
+                <button class="filter-btn" data-filter="social">Соцмедиа</button>
+                <button class="filter-btn" data-filter="branding">Брендинг</button>
+                <button class="filter-btn" data-filter="ads">Реклама</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal" data-category="social">
+                    <div class="portfolio-img">📱</div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Соцмедиа</span>
+                        <h3>Туристический бренд Кипра</h3>
+                        <p>Рост подписчиков в Instagram на 300%</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal" data-category="ads">
+                    <div class="portfolio-img">🎯</div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Реклама</span>
+                        <h3>Кампания для интернет-магазина</h3>
+                        <p>ROAS 4.8x</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal" data-category="branding">
+                    <div class="portfolio-img">✨</div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Брендинг</span>
+                        <h3>Сеть ресторанов</h3>
+                        <p>Узнаваемость бренда +80%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Наша команда</h2>
+                <p>Творческие умы, стоящие за успехом.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card reveal">
+                    <div class="team-avatar">👩‍💻</div>
+                    <h3>Айше Кая</h3>
+                    <p>Директор по соцмедиа</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-avatar">👨‍🎨</div>
+                    <h3>Мехмет Йылмаз</h3>
+                    <p>Креативный директор</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-avatar">👩‍🔬</div>
+                    <h3>Зейнеп Оз</h3>
+                    <p>Аналитик данных</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-avatar">👨‍💼</div>
+                    <h3>Джан Демир</h3>
+                    <p>Аккаунт-менеджер</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Отзывы</h2>
+                <p>Что говорят бренды, с которыми мы работали.</p>
+            </div>
+            <div class="carousel reveal">
+                <div class="carousel-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Сотрудничество с Doruk Media стало поворотным моментом. Они настоящие эксперты в управлении соцмедиа на Кипре."</p>
+                        <p class="testimonial-author">Ахмет Ш.</p>
+                        <p class="testimonial-company">Cyprus Tourism Ltd.</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Наши продажи удвоились благодаря рекламе в соцмедиа на Кипре. Отличная команда!"</p>
+                        <p class="testimonial-author">Елена М.</p>
+                        <p class="testimonial-company">Модный бутик</p>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button id="carousel-prev">←</button>
+                    <button id="carousel-next">→</button>
+                </div>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Часто задаваемые вопросы</h2>
+                <p>Всё, что вас интересует.</p>
+            </div>
+            <div class="faq-list reveal">
+                <div class="faq-item">
+                    <div class="faq-question">Какие пакеты управления соцмедиа у вас есть?</div>
+                    <div class="faq-answer"><p>У нас есть пакеты «Старт», «Профессиональный» и «Корпоративный». Подробности в разделе цен.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Какой бюджет нужен для рекламы в соцмедиа на Кипре?</div>
+                    <div class="faq-answer"><p>Бюджет определяется целями. Эффективные кампании возможны от €400.</p></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Как быстро я увижу результаты?</div>
+                    <div class="faq-answer"><p>Органический рост заметен через 3-6 месяцев, реклама даёт трафик сразу.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Контакты</h2>
+                <p>Свяжитесь с нами для индивидуального решения.</p>
+            </div>
+            <div class="contact-grid reveal">
+                <div class="contact-info">
+                    <div class="contact-info-item">📞 <span>+90 392 666 55 44</span></div>
+                    <div class="contact-info-item">✉️ <span>info@dorukmedia.com</span></div>
+                    <div class="contact-info-item">📍 <span>Girne Caddesi No:12, Гирне, Кипр</span></div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="text" id="company" placeholder="Компания">
+                    <select id="service">
+                        <option value="">Выберите услугу</option>
+                        <option value="management">Управление соцмедиа</option>
+                        <option value="ads">Реклама в соцмедиа</option>
+                        <option value="content">Создание контента</option>
+                        <option value="other">Другое</option>
+                    </select>
+                    <textarea id="message" rows="4" placeholder="Ваше сообщение"></textarea>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                    <div class="success-message" id="formSuccess">✅ Сообщение отправлено! Мы скоро свяжемся с вами.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container reveal">
+            <h2>Подпишитесь на рассылку</h2>
+            <p>Будьте в курсе советов по цифровому маркетингу и специальных предложений.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit">Подписаться</button>
+            </form>
+            <p style="margin-top:12px; opacity:0.8;">Еженедельная рассылка, без спама.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo" style="margin-bottom:12px;">
+                        <div class="logo-icon">
+                            <div class="logo-circle c1"></div><div class="logo-circle c2"></div><div class="logo-triangle"></div>
+                        </div>
+                        <span class="logo-text" style="color:white;">Doruk<span class="logo-accent">Media</span></span>
+                    </div>
+                    <p style="opacity:0.8;">Ведущее агентство соцмедиа на Кипре. Поднимаем ваш бренд на вершину.</p>
+                    <div class="social-links footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="#">Управление соцмедиа</a></li>
+                        <li><a href="#">Реклама в соцмедиа</a></li>
+                        <li><a href="#">Создание контента</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="#">info@dorukmedia.com</a></li>
+                        <li><a href="#">+90 392 666 55 44</a></li>
+                        <li><a href="#">Гирне, Кипр</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Doruk Media. Все права защищены. | <strong>Агентство соцмедиа на Кипре</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/903926665544" class="whatsapp-float" target="_blank">💬</a>
+    <button class="back-to-top" id="backToTop">↑</button>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
