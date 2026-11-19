@@ -40,21 +40,25 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentTheme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
     }
-    themeToggle.addEventListener('click', () => {
-        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
-        localStorage.setItem('theme', isDark ? 'light' : 'dark');
-    });
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
+            localStorage.setItem('theme', isDark ? 'light' : 'dark');
+        });
+    }
 
     // ---------- Mobile Menu ----------
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        nav.classList.toggle('active');
-    });
+    if (hamburger && nav) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    }
     document.querySelectorAll('.nav-list a').forEach(link => {
         link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            nav.classList.remove('active');
+            if (hamburger) hamburger.classList.remove('active');
+            if (nav) nav.classList.remove('active');
         });
     });
 
@@ -62,12 +66,24 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         const scrollTop = window.pageYOffset;
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const progress = (scrollTop / docHeight) * 100;
-        progressBar.style.width = progress + '%';
-        if (scrollTop > 500) {
-            backToTop.classList.add('show');
-        } else {
-            backToTop.classList.remove('show');
+        const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        if (progressBar) progressBar.style.width = progress + '%';
+        if (backToTop) {
+            if (scrollTop > 500) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        }
+    }, { passive: true });
+
+    // ---------- Keyboard Escape Accessibility ----------
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (langSwitcher) langSwitcher.classList.remove('active');
+            if (hamburger) hamburger.classList.remove('active');
+            if (nav) nav.classList.remove('active');
+            if (modalOverlay) modalOverlay.classList.remove('active');
         }
     });
 
