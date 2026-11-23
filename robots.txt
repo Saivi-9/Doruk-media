@@ -7,5 +7,7 @@ Allow: /css/
 Allow: /js/
 Allow: /assets/
 Disallow: /private/
+Disallow: /tmp/
+Disallow: /drafts/
 
 Sitemap: https://doruk-media-3780f1.netlify.app/sitemap.xml
