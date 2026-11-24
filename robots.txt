@@ -9,5 +9,7 @@ Allow: /assets/
 Disallow: /private/
 Disallow: /tmp/
 Disallow: /drafts/
+Disallow: /backup/
+Disallow: /_archived/
 
 Sitemap: https://doruk-media-3780f1.netlify.app/sitemap.xml
