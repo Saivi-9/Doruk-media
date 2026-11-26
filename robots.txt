@@ -12,5 +12,6 @@ Disallow: /drafts/
 Disallow: /backup/
 Disallow: /_archived/
 Disallow: /staging/
+Disallow: /preview/
 
 Sitemap: https://doruk-media-3780f1.netlify.app/sitemap.xml
